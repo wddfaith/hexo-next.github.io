@@ -2034,7 +2034,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #142bf0;
+  background: #b34d99;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2873,10 +2873,10 @@ embed {
   display: inline-block;
 }
 .sidebar {
-  left: 0;
+  right: 0;
 }
 .sidebar-toggle {
-  left: 30px;
+  right: $b2t-position-left;
 }
 .post {
   margin-top: 60px;
@@ -2892,13 +2892,6 @@ embed {
   font-size: 13px;
   margin-top: 15px;
 }
-body {
-  background: url("/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-}
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
@@ -2909,6 +2902,19 @@ body {
   border-radius: 20px;
   padding: 30px 60px 30px 60px;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+body {
+  background-image: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+#sidebar {
+  background: url("/images/sd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
